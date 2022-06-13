@@ -1,5 +1,3 @@
-# Semester IV project 
-
 # Datapipeline-TCP-UDP-neo4j
 This project is about building a data pipeline to move network traces from a dataset to a Neo4J data store using Python. Each trace over TCP and UDP as well as their subtraces (ARP and ICMP) need to be modelized and stored in Neo4J. The purpose is to visualize each sender and receiver as Nodes, as well as the type of the protocol used as a relationship.
 
