@@ -1,0 +1,2 @@
+MATCH p = ( ) — [ r:UDP] -> ( ) RETURN p LIMIT 25;
+MATCH (n:Host) RETURN n
