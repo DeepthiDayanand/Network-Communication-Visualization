@@ -14,17 +14,20 @@ This project aims to build a data pipeline that:
 Python is chosen as the primary tool to build the data pipeline due to its extensive libraries for handling data (such as pandas for data manipulation), network trace analysis (e.g., scapy for parsing packet data), and graph database interaction (such as py2neo or neo4j-driver for connecting to Neo4j). 
 The code is written in the Jupyter Notebook and the results can be visualized in Neo4j using Cypher SQL. 
 
-Visualization of UDP nodes and relationships - 
+Visualization of UDP nodes and relationships 
+
 `MATCH p = ( ) — [ r:UDP] => ( ) RETURN p LIMIT 25`
 
 ![Image augmentation](images/udp.png)
 
-Visualization of ICMP nodes and relationships - 
+Visualization of ICMP nodes and relationships 
+
 `MATCH p = ( ) — [ r:ICMP] => ( ) RETURN p LIMIT 25`
 
 ![Image augmentation](images/icmp.png)
 
-Visualization of the database - 
+Visualization of the database 
+
 `MATCH (n:HOST) RETURN n`
 
 ![Image augmentation](images/database.png)
@@ -35,7 +38,7 @@ Network traces represent communication data between various devices in a network
 - Sender (Source): The device sending the data packet.
 - Receiver (Destination): The device receiving the data packet.
 - Protocol: The communication protocol used, such as TCP (Transmission Control Protocol), UDP (User Datagram Protocol), ARP (Address Resolution Protocol), or ICMP (Internet Control Message Protocol).
-- 
+  
 By processing these network traces, the project aims to model the interactions between network nodes (senders and receivers) and the protocols they use.
 
 ## Graph Database (Neo4j)
